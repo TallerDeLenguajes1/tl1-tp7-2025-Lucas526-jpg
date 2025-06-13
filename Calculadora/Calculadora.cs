@@ -1,26 +1,26 @@
 namespace EspacioCalculadora{
     class Calculadora {
         private double numero = 0;
-        void Sumar(double termino){
+        public void Sumar(double termino){
             numero+=termino;
         }
-        void Restar(double termino){
+        public void Restar(double termino){
             numero-=termino;
         }
-        void Multiplicar(double termino){
+        public void Multiplicar(double termino){
             numero*=termino;
         }
-        void Dividir(double termino){
+        public void Dividir(double termino){
             if (termino != 0)
             {
                 numero/=termino;
             }
         }
-        void Limpiar(){
+        public void Limpiar(){
             numero = 0;
         }
 
-        public double resultado{
+        public double Resultado{
             get=>numero;
         }
     }
