@@ -11,10 +11,22 @@ class Program{
             Console.WriteLine("Ingrese un numero");
         if (double.TryParse(Console.ReadLine(),out double numero))
         {
-            num.Sumar(numero);
-            num.Restar(numero);
-            num.Multiplicar(numero);
-            num.Dividir(numero);
+            Console.WriteLine("Que calculo desea desarrolar?\n1.Suma\n2.Resta\n3.Multiplicacion\n4.Dividir");
+            if (int.TryParse(Console.ReadLine(),out int calculo))
+            {
+                switch (calculo){
+                case 1:num.Sumar(numero);
+                break;
+                case 2:num.Restar(numero);
+                break;
+                case 3:num.Multiplicar(numero);
+                break;
+                case 4:num.Dividir(numero);
+                break;
+                default:
+                break;
+                }
+            }
             Console.WriteLine($"Resultado: {num.Resultado}");
         }else
         {
