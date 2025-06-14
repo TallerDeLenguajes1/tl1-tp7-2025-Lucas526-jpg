@@ -5,7 +5,7 @@ class Program{
     static void Main(){
         int bandera;
         var num = new Calculadora();
-        Console.WriteLine("Calculadora version 0.0.1");
+        Console.WriteLine("Calculadora version 0.0.5");
         do
         {
             Console.WriteLine("Ingrese un numero");
